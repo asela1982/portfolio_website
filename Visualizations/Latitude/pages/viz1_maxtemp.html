@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Visualization Dashboard</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional Theme -->
+  <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <!-- This is my css file -->
+  <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" id="brand" href="landingpage.html">Latitude</a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="viz1_maxtemp.html">Max Temperature</a>
+              </li>
+              <li>
+                <a href="viz2_humidity.html">Humidity</a>
+              </li>
+              <li>
+                <a href="viz3_cloudiness.html">Cloudiness</a>
+              </li>
+              <li>
+                <a href="viz4_windspeed.html">Wind Speed</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="comparison.html">Comparison</a>
+          </li>
+          <li>
+            <a href="datapage.html">Data</a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  <!-- main content -->
+  <section class='main-frame'>
+    <div class="container-fluid">
+
+      <div class="row">
+        <!-- box1 -->
+        <div class="col-md-8" id="box3">
+          <h2>Max Temperature</h2>
+          <hr>
+          <img src="../projectfiles/output_data/Fig1.svg" alt="Figure4" class="img-responsive">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus dolor, provident nemo minus non laborum corporis
+            illum commodi velit totam nam, sit labore exercitationem, cumque laudantium minima id? Harum?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, doloremque adipisci. Alias totam est saepe quo iure
+            repellendus magnam, accusantium labore aspernatur commodi in soluta earum aut molestiae beatae quidem.</p>
+        </div>
+
+
+        <!-- box2 -->
+        <div class="col-md-4" id="box4">
+          <h3>Visualizations</h3>
+          <hr>
+
+          <div class="row">
+            
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <a href="viz1_maxtemp.html">
+                  <img src="../projectfiles/output_data/Fig1.svg" alt="Figure1" class="img-responsive">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <a href="viz2_humidity.html">
+                  <img src="../projectfiles/output_data/Fig2.svg" alt="Figure2" class="img-responsive">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <a href="viz3_cloudiness.html">
+                  <img src="../projectfiles/output_data/Fig3.svg" alt="Figure3" class="img-responsive">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <a href="viz4_windspeed.html">
+                  <img src="../projectfiles/output_data/Fig4.svg" alt="Figure4" class="img-responsive">
+                </a>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified Javascript -->
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

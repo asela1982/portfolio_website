@@ -1,0 +1,52 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    padding-top: 4px;
+}
+
+.thumbnail{
+
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px lightgrey;
+}
+
+.thumbnail img{
+    height:180px;
+}
+
+.thumbnail h3{
+    color: gray;
+   
+
+}
+
+.main-page-gallery{
+    margin-top: 50px;
+}
+
+.social{
+    height: 25px;
+
+}   
+
+a:link {
+    text-decoration: none;
+}
+
+
+.main-page-featured h2{
+    color: red;
+    text-align: left;
+}
+
+.main-page-featured img{
+    float:left;
+}
+
+#demo{
+    color: rebeccapurple;
+    text-align: left;
+}
