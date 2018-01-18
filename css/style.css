@@ -1,14 +1,28 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
+
+/* navigation secion */
 
 nav{
     padding-top: 4px;
 }
 
-.thumbnail{
+.social{
+    height: 25px;
+}   
 
+
+
+.blockquote-reverse{
+    margin-top: 100px;
+}
+
+
+/* home page gallery section */
+
+.thumbnail{
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 30px lightgrey;
@@ -20,44 +34,49 @@ nav{
 
 .thumbnail h3{
     color: gray;
-   
-
 }
 
 .main-page-gallery{
     margin-top: 50px;
 }
 
-.social{
-    height: 25px;
-
-}   
 
 a:link {
     text-decoration: none;
 }
 
 
-.main-page-featured h2{
-    color: blue;
-    text-align: left;
-    font-weight: bold;
-}
+/* home page featured secion */
 
-.main-page-featured img{
-    float:right;
-}
-
-#demo{
-    color: rebeccapurple;
+.main-page-featured h1{
+    color: #ff3a3a;
+    font-weight:700;
+    letter-spacing:+0.025em;
     text-align: left;
 }
 
 .thumbnail-featured img{
+    float:right;
     height:100px;
     padding: 20px;
 }
 
 .thumbnail-featured p{
-    padding-left: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size:12px;
+}
+
+/* home page footer secion */
+
+.footer-col-wrapper{
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size:12px;
+}
+.footer-col-wrapper a{
+    color: #2a7ae2;
+    text-decoration: none;
 }

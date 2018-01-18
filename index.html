@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-    <title>Document</title>
+    <title>Asela Dassanayake</title>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Bootstrap -->
@@ -22,7 +22,7 @@
 
 <body>
 
-        <nav class="navbar navbar-default">
+        <nav class="navbar  navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
@@ -32,7 +32,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Asela Dassanayake</a>
+                    <a class="navbar-brand" href="#">Asela <small>Dassanayake</small></a>
                   </div>
               
                   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,6 +74,18 @@
               </nav>
 
 
+
+    <div class="container">
+        <blockquote class="blockquote-reverse">
+                    <p><em>Float like a butterfly sting like a bee – his hands can’t hit what his eyes can’t see.</em></p>
+                    <footer>Muhammad Ali in <cite title="Source Title">The Rumble in the Jungle, 1974.</cite></footer>
+        </blockquote>
+    </div>
+
+
+
+
+    <!-- gallery section -->
     <section class="main-page-gallery">
         <div class="container">
             <div class="row">
@@ -152,22 +164,27 @@
         </div>
     </section>
 
+    <!-- ./gallery section -->
+
+
+    <!-- featured section -->
+
     <section class="main-page-featured">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">     
                         <div class="col-sm-12 col-md-12">
                                 <a href="Visualizations/Latitude/pages/landingpage.html">
                                 <div class="thumbnail thumbnail-featured">
-                                    <h2>Featured Post</h2>
+                                    <h1>Featured Post</h1>
                                     
-                                    <p id="demo"></p>
+                                    <p id="demo" class='featured--post__time'></p>
 
                                     <script>
                                     var d = new Date(2018, 0, 11);
                                     document.getElementById("demo").innerHTML = d;
                                     </script>
                                     
-                                    <img src="img/featured/thermometer.svg" alt="...">
+                                    <img src="img/featured/thermometer.svg" alt="..." class="img-responsive">
                                     <div class="caption">
                                         
                                         <p><h3>Web Visualization Dashboard (Lattitude)</h3>What's the weather like as we approach the equator?</p>
@@ -179,6 +196,19 @@
                     </div>
                 </div>
     </section>
+
+    <!-- ./featured section -->
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col-wrapper">
+            All contents under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Attribution-ShareAlike 4.0 International License</a> 
+            </div>
+        </div>
+    </footer>
+    <!-- ./footer section -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
