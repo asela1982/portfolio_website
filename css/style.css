@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 nav{
@@ -38,15 +39,25 @@ a:link {
 
 
 .main-page-featured h2{
-    color: red;
+    color: blue;
     text-align: left;
+    font-weight: bold;
 }
 
 .main-page-featured img{
-    float:left;
+    float:right;
 }
 
 #demo{
     color: rebeccapurple;
     text-align: left;
+}
+
+.thumbnail-featured img{
+    height:100px;
+    padding: 20px;
+}
+
+.thumbnail-featured p{
+    padding-left: 0;
 }
