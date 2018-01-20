@@ -52,6 +52,7 @@ body{
     border: 1px black dotted;
     background-color: white;
     padding: 20px;
+    margin:5px;
 }
 
 #box2 h3{

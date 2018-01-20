@@ -1,0 +1,17 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+.bucketlist{
+    width: 50%;
+    margin: auto;
+}
+
+.bucketlist h1{
+    text-align: center;
+    padding-bottom: 10px;
+
+}

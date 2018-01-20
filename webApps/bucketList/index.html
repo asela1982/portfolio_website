@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bucket List</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+        <div class="container">
+        <div class="row">
+                <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="https://www.atlantisthepalm.com/-/media/kws-atp/images/marine-and-waterpark/diving-and-courses/aquarium-dive/hero/aquariumdive-hero-main.jpg?la=en-gb&v1" alt="...">
+                  </a>
+                </div>
+                
+                <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                          <img src="http://www.gloholiday.com/wp-content/uploads/2014/02/Skydive.jpg" alt="...">
+                        </a>
+                      </div>
+
+                      <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                              <img src="http://embassyfestival.com/2017/wp-content/uploads/2017/08/yoga.jpg" alt="...">
+                            </a>
+                          </div>
+
+                          <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                  <img src="https://static.garmincdn.com/en_US/store/sports_rec/subcategory/cycling/signoff_bike_computer_gps.jpg" alt="...">
+                                </a>
+                              </div>
+
+              </div>
+              </div>
+
+
+    <div class="container">
+        <div class="jumbotron bucketlist">
+
+            <h1>My Bucket List</h1>
+
+            <div class="input-group">
+                <input id="addItemTextInput" type="text" class="form-control" placeholder="Goal" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">
+                    <button class="btn btn-default btn-success btn-xs active" onclick="handlers.addItem()">Add Goal</button>
+                </span>
+            </div>
+
+
+            <div class="input-group">
+                <input id="deleteItemPositionInput" type="number" class="form-control" placeholder="Position" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">
+                    <button class="btn btn-default btn-danger btn-xs" onclick="handlers.deleteItem()">Delete Goal</button>
+                </span>
+            </div>
+
+            <div class="input-group">
+                <input id="toggleItemPositionInput" type="number" class="form-control" placeholder="Position" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">
+                    <button class="btn btn-default btn-primary btn-xs" onclick="handlers.toggleItem()">Toggle Completed</button>
+                </span>
+            </div>
+
+
+            <div class="input-group">
+                <input id="changeItemTextInput" type="text" class="form-control" placeholder="New Goal" aria-describedby="sizing-addon2">
+                <input id="changeItemPositionInput" type="number" class="form-control" placeholder="Position" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">
+                    <button class="btn btn-default btn-warning btn-xs" onclick="handlers.changeItem()">Revise Goals</button>
+                </span>
+            </div>
+
+            <div>
+                <button class="btn btn-default btn-success btn-xs" onclick="handlers.toggleAll()">Toggle All</button>
+            </div>
+
+            <p>
+                <ul class="list-group">
+                </ul>
+            </p>
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
