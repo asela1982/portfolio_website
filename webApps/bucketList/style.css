@@ -3,3 +3,19 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
+
+
+
+/* footer secion */
+
+.footer-col-wrapper{
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size:12px;
+}
+.footer-col-wrapper a{
+    color: #2a7ae2;
+    text-decoration: none;
+}
