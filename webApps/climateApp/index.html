@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- ultrafast plotly.js CDN link -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- This is my css file -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar  navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Asela
+                    <small>Dassanayake</small>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">About Me
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resume/resume.html">Resume</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://www.linkedin.com/in/aseladassanayake/" target="_blank">
+                            <img class='social' src="../img/navbar/linkedin.svg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/asela1982" target="_blank">
+                            <img class='social' src="../img/navbar/Git-Logo-2Color.svg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/aselad82" target="_blank">
+                            <img class='social' src="../img/navbar/twitter.svg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:asela.d82@gmail.com" target="_blank">
+                            <img class='social' src="../img/navbar/google-plus.svg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://medium.com/@asela.d82" target="_blank">
+                            <img class='social' src="../img/navbar/medium.png">
+                        </a>
+                    </li>
+
+                </ul> -->
+            </div>
+        </div>
+    </nav>
+    <!-- ./navigation -->
+
+
+    <section class="main-content">
+        <div class="container">
+
+            <div style="background:#3D547E !important" class="jumbotron">
+                <img src="img/sunny.svg" style="height:50px" alt="">
+                <h1 style="color:white">Weather Forecast Web Application</h1>
+                <p style="color:white"> Visualize the weather forecast for the next 5 days for your prefered city</p>
+            </div>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputName2">City</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Paris,France">
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="panel panel-default" style="margin-top: 20px;">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Visualizing Trends</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="plotTemp"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-default" style="margin-top: 20px;">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Map</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="plotMap" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default" style="margin-top: 20px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Table</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped" id='summary-table'>
+                        <thead>
+                            <tr>
+                                <th>Coordinated Universal Time (UTC)</th>
+                                <th>Temperature</th>
+                                <th>Humidity, %</th>
+                                <th>Wind Speed</th>
+                                <th>Weather condition</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        </tbody>
+
+                    </table>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <script src="plots.js"></script>
+
+</body>
+
+</html>
