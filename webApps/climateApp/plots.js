@@ -4,6 +4,7 @@ function handleSubmit() {
   // @TODO: YOUR CODE HERE
   // Prevent the page from refreshing
   Plotly.d3.event.preventDefault();
+
   // Select the input value from the form
   var city = Plotly.d3.select("#exampleInputName2").node().value;
 
@@ -141,7 +142,7 @@ function buildMap(city) {
       hovermode: 'closest',
 
       mapbox: {
-        style: 'mapbox://styles/mapbox/streets-v9',
+        style: 'mapbox://styles/mapbox/bright-v9',
         center: {
           lat: latitude,
           lon: longitude
