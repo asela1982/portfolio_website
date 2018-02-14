@@ -2,8 +2,8 @@
 
 // initialize a PubNub instance.
 var pubnub = new PubNub({
-    subscribeKey: 'pub-c-88530e4b-9d85-4bcb-86ac-2019a7d19c24', // always required
-    publishKey: 'sub-c-f58342d2-1158-11e8-a78c-ded3dc92678b' // only required if publishing
+    subscribeKey: 'sub-c-f58342d2-1158-11e8-a78c-ded3dc92678b', // always required
+    publishKey: 'pub-c-88530e4b-9d85-4bcb-86ac-2019a7d19c24' // only required if publishing
 });
 
 
